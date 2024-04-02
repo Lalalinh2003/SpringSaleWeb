@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="com.ptpl_HibernateDemo_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.ptpl.pojo.Tag</class>
+    <class>com.ptpl.pojo.Comment</class>
+    <class>com.ptpl.pojo.Product</class>
+    <class>com.ptpl.pojo.OrderDetail</class>
+    <class>com.ptpl.pojo.ProdTag</class>
+    <class>com.ptpl.pojo.User</class>
+    <class>com.ptpl.pojo.Category</class>
+    <class>com.ptpl.pojo.SaleOrder</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Linh113@"/>
+    </properties>
+  </persistence-unit>
+</persistence>
